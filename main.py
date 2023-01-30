@@ -20,8 +20,31 @@ def affiche2(tab):
         print("\n")
 
 def verifCases(tab, hauteur, largeur):
-    pass
+    total = 0
+    if tab[largeur-1][hauteur-1] == 1:
+        total += 1
+    if tab[largeur][hauteur-1] == 1:
+        total += 1
+    if tab[largeur+1][hauteur-1] == 1:
+        total += 1
 
+    if tab[largeur-1][hauteur] == 1:
+        total += 1
+    if tab[largeur+1][hauteur] == 1:
+        total += 1
+    
+    if tab[largeur-1][hauteur+1] == 1:
+        total += 1
+    if tab[largeur][hauteur+1] == 1:
+        total += 1
+    if tab[largeur+1][hauteur+1] == 1:
+        total += 1
+    print(total)
+    return total
+
+
+
+## test
 a = tableau(6)
 affiche2(a)
-#verifCases(a, )
+verifCases(a, 3, 3)
