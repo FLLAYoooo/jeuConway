@@ -39,8 +39,8 @@ def verifCases(tab, hauteur, largeur):
         total += 1
     if tab[largeur+1][hauteur+1] == 1:
         total += 1
+    print(total)
     return total
-    print
 
 a = tableau(6)
 affiche2(a)
