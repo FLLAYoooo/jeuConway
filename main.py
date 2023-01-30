@@ -42,6 +42,9 @@ def verifCases(tab, hauteur, largeur):
     print(total)
     return total
 
+
+
+## test
 a = tableau(6)
 affiche2(a)
 verifCases(a, 3, 3)
